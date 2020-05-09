@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Snake Game | Fahad</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1 id="Gtitle">Snake Game</h1>
+	</div>
+	<div class="container-fluid menu">
+		<button class="button" onclick="startgame(200)"><span>Easy</span></button>
+		<button class="button" onclick="startgame(100)"><span>Medium</span></button>
+		<button class="button" onclick="startgame(50)"><span>Hard</span></button>
+	</div>
+	<div class="container Garea">
+		<div class="row">
+			<div class="col">
+				<canvas id="fahadcanvas" width="600" height="400">
+					<script type="text/javascript" src="script.js"></script>
+				</canvas>
+			</div>
+			<div class="col">
+				<h1 id="Stitile">Score</h1>
+				<input type="text" id="Gscore" name="score" value="0">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
